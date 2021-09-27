@@ -20,9 +20,12 @@
         <TextBox x:Name="txtNum2" Margin="5" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="{Binding Num2, UpdateSourceTrigger=PropertyChanged}" />
 
         <Button x:Name="btnAdd" Margin="5" Grid.Row="1" Command="{Binding AddCommand}" Grid.Column="0" Content="+"/>
-
+        <Button x:Name="btnSub" Margin="6,5.333,4.667,5.333" Grid.Row="1" Command="{Binding SubCommand}" Grid.Column="1" Content="-"/>
+        <Button x:Name="btnDivide" Margin="5.333,6.333,4.667,4.667" Grid.Row="1" Command="{Binding DivideCommand}" Grid.Column="3" Content="/"/>
+        <Button x:Name="btnMulti" Margin="5.333,5.333,4.667,6" Grid.Row="1" Command="{Binding MultiCommand}" Grid.Column="2" Content="*"/>
 
         <TextBox x:Name="txtResult" Margin="5" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Text="{Binding Result}"/>
+
 
     </Grid>
 </Window>
